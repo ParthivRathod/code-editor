@@ -1,0 +1,161 @@
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+} */
+h2 {
+    color: #fff;
+}
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+.editor-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #61dafb;
+    margin-bottom: 5px;
+}
+.editor-labels span {
+    flex: 1;
+    text-align: center;
+}
+.editor {
+    display: flex;
+ justify-content: center;
+    width: 100%;
+    height: 320px;
+    gap: 15px;
+}
+textarea {
+    width: 33%;
+    height: 100%;
+    padding: 12px;
+    font-family: monospace;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 14px;
+    resize: none;
+}
+textarea::placeholder {
+    color: #bbb;
+}
+.output-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    text-align: center;
+}
+.output-placeholder {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+iframe {
+    width: 100%;
+    height: 420px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+.refresh-btn {
+margin-top: 30px; /* Increased top margin */
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+background-color: #7f5af0;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.refresh-btn:hover {
+    background-color: #4fa3d1;
+}
+
+@media (max-width: 768px) {
+    .editor {
+        flex-direction: column;
+        height: auto;
+    }
+    textarea {
+        width: 100%;
+        height: 150px;
+    }
+}
+.cssname{
+    display: none;
+}
+
+/* * Footer Styling */
+.footer {
+    background-color: #000000;
+
+    color: white;
+
+    padding: 20px 0;
+
+    text-align: center;
+
+}
+
+.footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 14px;
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+
+}
+
+.footer .mx-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+
+    }
+
+    .footer p {
+        font-size: 12px;
+
+    }
+}
+
+
