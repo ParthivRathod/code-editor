@@ -148,6 +148,7 @@ body {
     padding: 20px 0;
 
     text-align: center;
+    
 
 }
 
@@ -175,13 +176,13 @@ body {
 }
 
 .footer .mx-2 {
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        padding: 15px 0;
+  .footer {
+    padding: 15px 0;
 
     }
 
