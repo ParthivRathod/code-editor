@@ -122,23 +122,40 @@ body {
   transition: 0.3s;
 }
 
-.info_conatainer info{
-  display: inline-block;
-  margin: 10px 20px;
-
-  }
-  .info{
-    width: 50%;
-    height: 100px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  background-color: #000000;
-  margin: 10px 340px;
-  /* padding: 0; */
-  color: white;
+.main_info{
+  background-color: #16161a;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content:center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 80vh;
 }
+
+
+.html{
+  background-color: #7f5af0;
+  width: 350px;
+  /* height: 50px; */
+  margin: 10px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer Styling  */
 .footer {
     background-color: #000000;
