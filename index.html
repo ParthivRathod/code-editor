@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="/css/style.css">
+
     <link rel="icon" href="/imges/navlogo.png">
-
-  
-
+    <script src="/javascript/index.js"></script>
 
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
 </head>
 
@@ -29,8 +37,8 @@
         <div class="search-container">
             <input type="text" class="search-box" placeholder="Search...">
             <i class="fas fa-search search-icon"></i>
-          </div>
-          
+        </div>
+
 
         <ul>
             <li><a class="active" href="/index.html"><b>Home</b></a></li>
@@ -38,423 +46,190 @@
             <li><a href="/pages/tutorials.html">Tutorials</a></li>
             <li><a href="/pages/about.html">About</a></li>
         </ul>
-        <button class="signup_btn"><a href="" ></a>Sign Up</a></button>
+        <button class="signup_btn"><a href=""></a>Sign Up</a></button>
     </nav>
-    
-<div >
-    <img src="/imges/poster.jpg" alt="" class="home_poster">
-</div>
 
-<div class="main_info">
+    <div>
+        <img src="/imges/poster.jpg" alt="" class="home_poster">
+    </div>
 
-        <div class="html">
+    <div class="view">
+        <h1 class="main-heading block">World-class editor for tech
+            enthusiastic.</h1>
+    </div>
+    <div class="line-container ">
+        <div class="line "></div>
+    </div>
+    <!-- card -->
+    <div class="container block">
+        <div class="card-content html-content">
+            <img src="/imges/html-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
 
+            <div class="text-container">
+                <h1 class="heading-card">HTML</h1>
+                <h2 class="heading">First Language for Learning Web Designing</h2>
+                <p class="para">HTML (HyperText Markup Language) is the foundation of every webpage. It structures
+                    content using elements like headings, paragraphs, images, and links.</p>
+
+                <div class="btn-container">
+                    <button type="button" class="btn-card btn-start" onclick="goToPage('/pages/fronted.html')"> Start
+                    </button>
+                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('/pages/tutorials.html')">
+                        Tutorials </button>
+                    <button type="button" class="btn-card btn-about" onclick="goToPage('/pages/about.html')"> About
+                    </button>
+                    <button type="button" class="btn-card btn-more" onclick="goToPage('/pages/codezone.html')"> More
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="html">
+    </div>
+    <div class="container block">
+        <div class="card-content css-content">
+            <img src="/imges/css-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
 
-        </div>
-        <div class="html">
+            <div class="text-container">
+                <h1 class="heading-card">CSS</h1>
+                <h2 class="heading"> Second Language for Learning Web Designing</h2>
+                <p class="para">CSS (Cascading Style Sheets) is used to style and design web pages. It controls the layout, colors, fonts, and responsiveness of a website.</p>
 
+                <div class="btn-container">
+                    <button type="button" class="btn-card btn-start" onclick="goToPage('/pages/fronted.html')"> Start
+                    </button>
+                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('/pages/tutorials.html')">
+                        Tutorials </button>
+                    <button type="button" class="btn-card btn-about" onclick="goToPage('/pages/about.html')"> About
+                    </button>
+                    <button type="button" class="btn-card btn-more" onclick="goToPage('/pages/codezone.html')"> More
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="html">
+    </div>
+    <div class="container block">
+        <div class="card-content js-content">
+            <img src="/imges/js-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
         
+            <div class="text-container">
+                <h1 class="heading-card">JAVASCRIPT</h1>
+                <h2 class="heading">Third Language for Learning Web Designing</h2>
+                <p class="para">JavaScript (JS) is a programming language that adds interactivity and dynamic behavior to web pages, It enables features like animations.</p>
+
+                <div class="btn-container">
+                    <button type="button" class="btn-card btn-start" onclick="goToPage('/pages/fronted.html')"> Start
+                    </button>
+                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('/pages/tutorials.html')">
+                        Tutorials </button>
+                    <button type="button" class="btn-card btn-about" onclick="goToPage('/pages/about.html')"> About
+                    </button>
+                    <button type="button" class="btn-card btn-more" onclick="goToPage('/pages/codezone.html')"> More
+                    </button>
+                </div>
+            </div>
+            
         </div>
-        <div class="html">
+    </div>
 
+    <!-- marquee -->
+    <div class="marquee-wrapper">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <!-- Original Images -->
+                <img src="/imges/html-5.png" alt="HTML">
+                <img src="/imges/css-3.png" alt="CSS">
+                <img src="/imges/c-.png" alt="C">
+                <img src="/imges/java.png" alt="Java">
+                <img src="/imges/js.png" alt="JavaScript">
+                <img src="/imges/php.png" alt="PHP">
+                <img src="/imges/ruby.png" alt="Ruby">
+                <img src="/imges/sass.png" alt="SASS">
+                <img src="/imges/c-sharp.png" alt="C#">
+                <img src="/imges/sql.png" alt="SQL">
+                <img src="/imges/physics.png" alt="Physics">
+
+                <!-- Duplicate Images for seamless effect -->
+                <img src="/imges/html-5.png" alt="HTML">
+                <img src="/imges/css-3.png" alt="CSS">
+                <img src="/imges/c-.png" alt="C">
+                <img src="/imges/java.png" alt="Java">
+                <img src="/imges/js.png" alt="JavaScript">
+                <img src="/imges/php.png" alt="PHP">
+                <img src="/imges/ruby.png" alt="Ruby">
+                <img src="/imges/sass.png" alt="SASS">
+                <img src="/imges/c-sharp.png" alt="C#">
+                <img src="/imges/sql.png" alt="SQL">
+                <img src="/imges/physics.png" alt="Physics">
+                <img src="/imges/html-5.png" alt="HTML">
+                <img src="/imges/css-3.png" alt="CSS">
+                <img src="/imges/c-.png" alt="C">
+                <img src="/imges/java.png" alt="Java">
+                <img src="/imges/js.png" alt="JavaScript">
+                <img src="/imges/php.png" alt="PHP">
+                <img src="/imges/ruby.png" alt="Ruby">
+                <img src="/imges/sass.png" alt="SASS">
+                <img src="/imges/c-sharp.png" alt="C#">
+                <img src="/imges/sql.png" alt="SQL">
+                <img src="/imges/physics.png" alt="Physics">
+                <img src="/imges/html-5.png" alt="HTML">
+                <img src="/imges/css-3.png" alt="CSS">
+                <img src="/imges/c-.png" alt="C">
+                <img src="/imges/java.png" alt="Java">
+                <img src="/imges/js.png" alt="JavaScript">
+                <img src="/imges/php.png" alt="PHP">
+                <img src="/imges/ruby.png" alt="Ruby">
+                <img src="/imges/sass.png" alt="SASS">
+                <img src="/imges/c-sharp.png" alt="C#">
+                <img src="/imges/sql.png" alt="SQL">
+                <img src="/imges/physics.png" alt="Physics">
+                <img src="/imges/html-5.png" alt="HTML">
+                <img src="/imges/css-3.png" alt="CSS">
+                <img src="/imges/c-.png" alt="C">
+                <img src="/imges/java.png" alt="Java">
+                <img src="/imges/js.png" alt="JavaScript">
+                <img src="/imges/php.png" alt="PHP">
+                <img src="/imges/ruby.png" alt="Ruby">
+                <img src="/imges/sass.png" alt="SASS">
+                <img src="/imges/c-sharp.png" alt="C#">
+                <img src="/imges/sql.png" alt="SQL">
+                <img src="/imges/physics.png" alt="Physics">
+                <img src="/imges/html-5.png" alt="HTML">
+                <img src="/imges/css-3.png" alt="CSS">
+                <img src="/imges/c-.png" alt="C">
+                <img src="/imges/java.png" alt="Java">
+                <img src="/imges/js.png" alt="JavaScript">
+                <img src="/imges/php.png" alt="PHP">
+                <img src="/imges/ruby.png" alt="Ruby">
+                <img src="/imges/sass.png" alt="SASS">
+                <img src="/imges/c-sharp.png" alt="C#">
+                <img src="/imges/sql.png" alt="SQL">
+                <img src="/imges/physics.png" alt="Physics">
+            </div>
         </div>
-        <div class="html">
 
-        </div>
-        <div class="html">
-
-        </div>
-        <div class="html">
-
-        </div>
-  
-</div>
-
-<div><marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite" width="100%">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/html-5.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/css-3.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img style="height: 60px;" src="/imges/c-.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/java.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/js.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-
-    <img  style="height: 50px;" src="/imges/php.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/ruby.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sass.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/c-sharp.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/sql.png">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img  style="height: 50px;" src="/imges/physics.png">
-   
-   
-</marquee>
-
-
-
-
-</div>
+        <!-- Left & Right Shadows -->
+        <div class="shadow left-shadow"></div>
+        <div class="shadow right-shadow"></div>
+    </div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
+
 </html>
