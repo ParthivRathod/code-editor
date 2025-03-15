@@ -1,0 +1,13 @@
+.heading{
+    text-align: center;
+    color: white;
+}
+.subheading{
+    color: #7f5af0;
+    margin-left: 20px;
+}
+.para-content{
+    color: white;
+    margin-left: 60px;
+    font-size: 19px;
+}
