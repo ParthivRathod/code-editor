@@ -1,13 +1,78 @@
 .heading{
     text-align: center;
     color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .subheading{
     color: #7f5af0;
     margin-left: 20px;
 }
+
 .para-content{
     color: white;
-    margin-left: 60px;
+    margin: 40px;
     font-size: 19px;
+}
+.aboutcodeversapara{
+    color: cyan;
+    margin: 40px;
+    font-size: 19px;
+}
+.containerpara{
+    border: 1px solid #7f5af0;
+    width: 90%;
+    border-radius: 20px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 7px #835fee;
+    margin-bottom: 50px;
+}
+.contactus{
+    text-align: center;
+    color: #7f5af0;
+
+    
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact-card{
+    height: 220px;
+    width: 230px;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+.contactimg{
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.contact-card-data{
+    color: white;
+    text-align: center;
+}
+info-para{
+    color: white;
+    text-align: center; 
+}
+.user-social {
+    display: flex;
+    justify-content: center;
+
+}
+
+.user-social img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    margin: 10px;
 }
