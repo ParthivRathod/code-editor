@@ -1,3 +1,6 @@
+<?php session_start();
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -5,11 +8,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="icon" href="/imges/navlogo.png">
-    <script src="/javascript/index.js"></script>
-
+    <link rel="icon" href="imges/navlogo.png">
+    <script src="javascript/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +32,13 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo"><a href="/index.html"><img src="/imges/logo.png" alt=""></a></label>
+        <!-- <label class="logo"><a href="/index.html"><img src="/imges/logo.png" alt=""></a></label> -->
+        <!-- <label class="logo"><a href="/index.html"><img src="code-editor/imges/logo.png" alt=""></a></label> -->
+        <label class="logo">
+  <a href="index.php">
+    <img src="imges/logo.png" alt="Logo">
+  </a>
+</label>
 
         <!-- <input type="text" class="search_box" placeholder="Search...">
         <img src="/imges/search.png" alt="" class="search_icon"> -->
@@ -41,16 +50,23 @@
 
 
         <ul>
-            <li><a class="active" href="/index.html"><b>Home</b></a></li>
-            <li><a href="/pages/codezone.html">CodeZone</a></li>
-            <li><a href="/pages/tutorials.html">Tutorials</a></li>
-            <li><a href="/pages/about.html">About</a></li>
+            <li><a class="active" href="index.php"><b>Home</b></a></li>
+            <li><a href="pages/codezone.php">CodeZone</a></li>
+            <li><a href="pages/tutorials.php">Tutorials</a></li>
+            <li><a href="pages/about.php">About</a></li>
         </ul>
-        <button class="signup_btn"><a href=""></a>Sign Up</a></button>
+        <div class="auth-area">
+            <?php if ($username): ?>
+
+                <a href="pages/logout.php" class="signup_btn">Sign Out</a>
+            <?php else: ?>
+                <button class="signup_btn" onclick="window.location.href='./pages/signin.php'">Sign In</button>
+            <?php endif; ?>
+        </div>
     </nav>
 
     <div>
-        <img src="/imges/poster.jpg" alt="" class="home_poster">
+        <img src="imges/poster.jpg" alt="" class="home_poster">
     </div>
 
     <div class="view">
@@ -63,7 +79,7 @@
     <!-- card -->
     <div class="container block">
         <div class="card-content html-content">
-            <img src="/imges/html-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
+            <img src="imges/html-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
 
             <div class="text-container">
                 <h1 class="heading-card">HTML</h1>
@@ -72,13 +88,13 @@
                     content using elements like headings, paragraphs, images, and links.</p>
 
                 <div class="btn-container">
-                    <button type="button" class="btn-card btn-start" onclick="goToPage('/pages/fronted.html')"> Start
+                    <button type="button" class="btn-card btn-start" onclick="goToPage('pages/fronted.php')"> Start
                     </button>
-                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('/pages/tutorials.html')">
+                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('pages/tutorials.php')">
                         Tutorials </button>
-                    <button type="button" class="btn-card btn-about" onclick="goToPage('/pages/about.html')"> About
+                    <button type="button" class="btn-card btn-about" onclick="goToPage('pages/about.php')"> About
                     </button>
-                    <button type="button" class="btn-card btn-more" onclick="goToPage('/pages/codezone.html')"> More
+                    <button type="button" class="btn-card btn-more" onclick="goToPage('pages/codezone.php')"> More
                     </button>
                 </div>
             </div>
@@ -89,7 +105,7 @@
     </div>
     <div class="container block">
         <div class="card-content css-content">
-            <img src="/imges/css-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
+            <img src="imges/css-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
 
             <div class="text-container">
                 <h1 class="heading-card">CSS</h1>
@@ -98,13 +114,13 @@
                     layout, colors, fonts, and responsiveness of a website.</p>
 
                 <div class="btn-container">
-                    <button type="button" class="btn-card btn-start" onclick="goToPage('/pages/fronted.html')"> Start
+                    <button type="button" class="btn-card btn-start" onclick="goToPage('pages/fronted.php')"> Start
                     </button>
-                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('/pages/tutorials.html')">
+                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('pages/tutorials.php')">
                         Tutorials </button>
-                    <button type="button" class="btn-card btn-about" onclick="goToPage('/pages/about.html')"> About
+                    <button type="button" class="btn-card btn-about" onclick="goToPage('pages/about.php')"> About
                     </button>
-                    <button type="button" class="btn-card btn-more" onclick="goToPage('/pages/codezone.html')"> More
+                    <button type="button" class="btn-card btn-more" onclick="goToPage('pages/codezone.php')"> More
                     </button>
                 </div>
             </div>
@@ -115,7 +131,7 @@
     </div>
     <div class="container block">
         <div class="card-content js-content">
-            <img src="/imges/js-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
+            <img src="imges/js-card-image.png" alt="image" class="main-product-image block" id="main-product-image">
 
             <div class="text-container">
                 <h1 class="heading-card">JAVASCRIPT</h1>
@@ -124,13 +140,13 @@
                     to web pages, It enables features like animations.</p>
 
                 <div class="btn-container">
-                    <button type="button" class="btn-card btn-start" onclick="goToPage('/pages/fronted.html')"> Start
+                    <button type="button" class="btn-card btn-start" onclick="goToPage('pages/fronted.php')"> Start
                     </button>
-                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('/pages/tutorials.html')">
+                    <button type="button" class="btn-card btn-tutotrial" onclick="goToPage('pages/tutorials.php')">
                         Tutorials </button>
-                    <button type="button" class="btn-card btn-about" onclick="goToPage('/pages/about.html')"> About
+                    <button type="button" class="btn-card btn-about" onclick="goToPage('pages/about.php')"> About
                     </button>
-                    <button type="button" class="btn-card btn-more" onclick="goToPage('/pages/codezone.html')"> More
+                    <button type="button" class="btn-card btn-more" onclick="goToPage('pages/codezone.php')"> More
                     </button>
                 </div>
             </div>
@@ -146,74 +162,64 @@
         <div class="marquee-container">
             <div class="marquee-content">
                 <!-- Original Images -->
-                <img src="/imges/html-5.png" alt="HTML">
-                <img src="/imges/css-3.png" alt="CSS">
-                <img src="/imges/c-.png" alt="C">
-                <img src="/imges/java.png" alt="Java">
-                <img src="/imges/js.png" alt="JavaScript">
-                <img src="/imges/php.png" alt="PHP">
-                <img src="/imges/ruby.png" alt="Ruby">
-                <img src="/imges/sass.png" alt="SASS">
-                <img src="/imges/c-sharp.png" alt="C#">
-                <img src="/imges/sql.png" alt="SQL">
-                <img src="/imges/physics.png" alt="Physics">
+                <img src="imges/html-5.png" alt="HTML">
+                <img src="imges/css-3.png" alt="CSS">
+                <img src="imges/c-.png" alt="C">
+                <img src="imges/java.png" alt="Java">
+                <img src="imges/js.png" alt="JavaScript">
+                <img src="imges/php.png" alt="PHP">
+                <img src="imges/ruby.png" alt="Ruby">
+                <img src="imges/sass.png" alt="SASS">
+                <img src="imges/c-sharp.png" alt="C#">
+                <img src="imges/sql.png" alt="SQL">
+                <img src="imges/physics.png" alt="Physics">
+                <img src="imges/html-5.png" alt="HTML">
+                <img src="imges/css-3.png" alt="CSS">
+                <img src="imges/c-.png" alt="C">
+                <img src="imges/java.png" alt="Java">
+                <img src="imges/js.png" alt="JavaScript">
+                <img src="imges/php.png" alt="PHP">
+                <img src="imges/ruby.png" alt="Ruby">
+                <img src="imges/sass.png" alt="SASS">
+                <img src="imges/c-sharp.png" alt="C#">
+                <img src="imges/sql.png" alt="SQL">
+                <img src="imges/physics.png" alt="Physics">
+                <img src="imges/html-5.png" alt="HTML">
+                <img src="imges/css-3.png" alt="CSS">
+                <img src="imges/c-.png" alt="C">
+                <img src="imges/java.png" alt="Java">
+                <img src="imges/js.png" alt="JavaScript">
+                <img src="imges/php.png" alt="PHP">
+                <img src="imges/ruby.png" alt="Ruby">
+                <img src="imges/sass.png" alt="SASS">
+                <img src="imges/c-sharp.png" alt="C#">
+                <img src="imges/sql.png" alt="SQL">
+                <img src="imges/physics.png" alt="Physics">
+                <img src="imges/html-5.png" alt="HTML">
+                <img src="imges/css-3.png" alt="CSS">
+                <img src="imges/c-.png" alt="C">
+                <img src="imges/java.png" alt="Java">
+                <img src="imges/js.png" alt="JavaScript">
+                <img src="imges/php.png" alt="PHP">
+                <img src="imges/ruby.png" alt="Ruby">
+                <img src="imges/sass.png" alt="SASS">
+                <img src="imges/c-sharp.png" alt="C#">
+                <img src="imges/sql.png" alt="SQL">
+                <img src="imges/physics.png" alt="Physics">
+                <img src="imges/html-5.png" alt="HTML">
+                <img src="imges/css-3.png" alt="CSS">
+                <img src="imges/c-.png" alt="C">
+                <img src="imges/java.png" alt="Java">
+                <img src="imges/js.png" alt="JavaScript">
+                <img src="imges/php.png" alt="PHP">
+                <img src="imges/ruby.png" alt="Ruby">
+                <img src="imges/sass.png" alt="SASS">
+                <img src="imges/c-sharp.png" alt="C#">
+                <img src="imges/sql.png" alt="SQL">
+                <img src="imges/physics.png" alt="Physics">
 
-                <!-- Duplicate Images for seamless effect -->
-                <img src="/imges/html-5.png" alt="HTML">
-                <img src="/imges/css-3.png" alt="CSS">
-                <img src="/imges/c-.png" alt="C">
-                <img src="/imges/java.png" alt="Java">
-                <img src="/imges/js.png" alt="JavaScript">
-                <img src="/imges/php.png" alt="PHP">
-                <img src="/imges/ruby.png" alt="Ruby">
-                <img src="/imges/sass.png" alt="SASS">
-                <img src="/imges/c-sharp.png" alt="C#">
-                <img src="/imges/sql.png" alt="SQL">
-                <img src="/imges/physics.png" alt="Physics">
-                <img src="/imges/html-5.png" alt="HTML">
-                <img src="/imges/css-3.png" alt="CSS">
-                <img src="/imges/c-.png" alt="C">
-                <img src="/imges/java.png" alt="Java">
-                <img src="/imges/js.png" alt="JavaScript">
-                <img src="/imges/php.png" alt="PHP">
-                <img src="/imges/ruby.png" alt="Ruby">
-                <img src="/imges/sass.png" alt="SASS">
-                <img src="/imges/c-sharp.png" alt="C#">
-                <img src="/imges/sql.png" alt="SQL">
-                <img src="/imges/physics.png" alt="Physics">
-                <img src="/imges/html-5.png" alt="HTML">
-                <img src="/imges/css-3.png" alt="CSS">
-                <img src="/imges/c-.png" alt="C">
-                <img src="/imges/java.png" alt="Java">
-                <img src="/imges/js.png" alt="JavaScript">
-                <img src="/imges/php.png" alt="PHP">
-                <img src="/imges/ruby.png" alt="Ruby">
-                <img src="/imges/sass.png" alt="SASS">
-                <img src="/imges/c-sharp.png" alt="C#">
-                <img src="/imges/sql.png" alt="SQL">
-                <img src="/imges/physics.png" alt="Physics">
-                <img src="/imges/html-5.png" alt="HTML">
-                <img src="/imges/css-3.png" alt="CSS">
-                <img src="/imges/c-.png" alt="C">
-                <img src="/imges/java.png" alt="Java">
-                <img src="/imges/js.png" alt="JavaScript">
-                <img src="/imges/php.png" alt="PHP">
-                <img src="/imges/ruby.png" alt="Ruby">
-                <img src="/imges/sass.png" alt="SASS">
-                <img src="/imges/c-sharp.png" alt="C#">
-                <img src="/imges/sql.png" alt="SQL">
-                <img src="/imges/physics.png" alt="Physics">
-                <img src="/imges/html-5.png" alt="HTML">
-                <img src="/imges/css-3.png" alt="CSS">
-                <img src="/imges/c-.png" alt="C">
-                <img src="/imges/java.png" alt="Java">
-                <img src="/imges/js.png" alt="JavaScript">
-                <img src="/imges/php.png" alt="PHP">
-                <img src="/imges/ruby.png" alt="Ruby">
-                <img src="/imges/sass.png" alt="SASS">
-                <img src="/imges/c-sharp.png" alt="C#">
-                <img src="/imges/sql.png" alt="SQL">
-                <img src="/imges/physics.png" alt="Physics">
+                
+              
             </div>
         </div>
 
@@ -287,8 +293,8 @@
         <h1>Start building websites <br> people <span class="highlight">can't ignore</span></h1>
 
         <div class="button-container">
-            <a href="" class="btn-start signup-start">Sign Up</a>
-            <a href="/pages/about.html" class="btn-start about-start">About</a>
+            <a href="pages/signin.php" class="btn-start signup-start">Sign Up</a>
+            <a href="pages/about.html" class="btn-start about-start">About</a>
             
         </div>
     </div>

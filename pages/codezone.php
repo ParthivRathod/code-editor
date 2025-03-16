@@ -1,3 +1,5 @@
+<?php session_start();
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -5,12 +7,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/imges/navlogo.png">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="icon" href="./../imges/navlogo.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="/css/codezone.css">
+        <link rel="stylesheet" href="./../css/codezone.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -21,7 +24,7 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo"><a href="/index.html"><img src="/imges/logo.png" alt=""></a></label>
+        <label class="logo"><a href="./../index.php"><img src="./../imges/logo.png" alt=""></a></label>
 
         <!-- <input type="text" class="search_box" placeholder="Search...">
         <img src="/imges/search.png" alt="" class="search_icon"> -->
@@ -33,12 +36,20 @@
           
 
         <ul>
-            <li><a class="active" href="/index.html">Home</a></li>
-            <li><a href="/pages/codezone.html"><b>CodeZone</b></a></li>
-            <li><a href="/pages/tutorials.html">Tutorials</a></li>
-            <li><a href="/pages/about.html">About</a></li>
+            <li><a class="active" href="./../index.php">Home</a></li>
+            <li><a href="./../pages/codezone.php"><b>CodeZone</b></a></li>
+            <li><a href="./../pages/tutorials.php">Tutorials</a></li>
+            <li><a href="./../pages/about.php">About</a></li>
         </ul>
-        <button class="signup_btn"><a href="" ></a>Sign Up</a></button>
+        <!-- <button class="signup_btn signin_style"><a href="" ></a>Sign Up</a></button> -->
+        <div class="auth-area">
+            <?php if ($username): ?>
+
+                <a href="./../pages/logout.php" class="signup_btn">Sign Out</a>
+            <?php else: ?>
+                <button class="signup_btn" onclick="window.location.href='./../pages/signin.php'">Sign In</button>
+            <?php endif; ?>
+        </div>
     </nav>
     <div class="heading">
         <h1>Beyond the Syntax
@@ -52,19 +63,19 @@
     <div class="card_container">
         <!-- card11  -->
         <div class="card">
-            <img src="/imges/html (1).png" alt="">
+            <img src="./../imges/html (1).png" alt="">
             <div class="card_content">
                 <h3>Forntend</h3>
 
                 <p>Frontend development is the part of web development that focuses on creating the visual elements and
                     user interface (UI) of a website or application. </p>
 
-                <a href="/pages/fronted.html" class="btn">Run code</a>
+                <a href="./../pages/fronted.php" class="btn">Run code</a>
             </div>
         </div>
         <!-- card1  -->
         <div class="card">
-            <img src="/imges/html.png" alt="gym_image">
+            <img src="./../imges/html.png" alt="gym_image">
             <div class="card_content">
                 <h3>HTML</h3>
 
@@ -80,7 +91,7 @@
 
         <!-- card2  -->
         <div class="card">
-            <img src="/imges/css-3 (1).png" alt="gym_image">
+            <img src="./../imges/css-3 (1).png" alt="gym_image">
             <div class="card_content">
                 <h3>CSS</h3>
                 <p>CSS stands for Cascading Style Sheets. It is a stylesheet language used to style and enhance website
@@ -94,7 +105,7 @@
 
         <!-- card3  -->
         <div class="card">
-            <img src="/imges/java-script.png" alt="gym_image">
+            <img src="./../imges/java-script.png" alt="gym_image">
             <div class="card_content">
                 <h3>java-script</h3>
 
@@ -106,7 +117,7 @@
         </div>
         <!-- card4  -->
         <div class="card">
-            <img src="/imges/c-.png" alt="gym_image">
+            <img src="./../imges/c-.png" alt="gym_image">
             <div class="card_content">
                 <h3>C++</h3>
 
@@ -120,7 +131,7 @@
 
         <!-- card5  -->
         <div class="card">
-            <img src="/imges/c-sharp.png" alt="gym_image">
+            <img src="./../imges/c-sharp.png" alt="gym_image">
             <div class="card_content">
                 <h3>C#</h3>
 
@@ -134,7 +145,7 @@
 
         <!-- card6  -->
         <div class="card">
-            <img src="/imges/letter-c.png" alt="gym_image">
+            <img src="./../imges/letter-c.png" alt="gym_image">
             <div class="card_content">
                 <h3>C</h3>
 
@@ -149,7 +160,7 @@
 
         <!-- card7  -->
         <div class="card">
-            <img src="/imges/java.png" alt="gym_image">
+            <img src="./../imges/java.png" alt="gym_image">
             <div class="card_content">
                 <h3>Java</h3>
 
@@ -164,7 +175,7 @@
 
         <!-- card8  -->
         <div class="card">
-            <img src="/imges/python.png" alt="gym_image">
+            <img src="./../imges/python.png" alt="gym_image">
             <div class="card_content">
                 <h3>Python</h3>
 
@@ -177,7 +188,7 @@
         </div>
         <!-- card9  -->
         <div class="card">
-            <img src="/imges/php.png" alt="gym_image">
+            <img src="./../imges/php.png" alt="gym_image">
             <div class="card_content">
                 <h3>PHP</h3>
 
@@ -190,7 +201,7 @@
         </div>
         <!-- card10  -->
         <div class="card">
-            <img src="/imges/sql.png">
+            <img src="./../imges/sql.png">
             <div class="card_content">
                 <h3>SQL</h3>
 

@@ -111,8 +111,9 @@ ul li a:hover {
 }
 
 .signup_btn {
-  background-color: #7f5af0;
+  background-color: #000000;
   color: #fffffe;
+  border: 2px solid white;
   padding: 8px 24px;
   text-decoration: none;
   /* font-weight: bold; */
@@ -130,11 +131,6 @@ ul li a:hover {
   box-shadow: 0px 0px 2px 1px blue;
   transition: 0.3s;
 }
-
-
-
-
-
 
 /* marquee */
 
@@ -438,7 +434,7 @@ margin: 10px;
 /* why */
 
 .why-container{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Courier Prime', monospace;
   color: #f8f8f8;
   text-align: center;
   padding: 40px 20px;
@@ -447,12 +443,17 @@ margin: 10px;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
+
+
 }
 
 .highlight-text {
   color: #04AA6D;
   padding: 3px 8px;
   border-radius: 5px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 200;
+  
 }
 
 .features-grid {
@@ -506,7 +507,8 @@ margin: 10px;
 
 /* review */
 .review-container{
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
+  font-family: 'Courier Prime', monospace;
   /* background-color: black; */
   color: #ffffff;
   display: flex;
@@ -563,7 +565,8 @@ margin: 10px;
 
 .testimonial-text {
   font-size: 1em;
-  color: #d1d1d1;
+  color: #929292;
+  /* color: #d1d1d1; */
   margin-bottom: 20px;
 }
 
@@ -582,6 +585,7 @@ margin: 10px;
 .testimonial-user-info {
   display: flex;
   flex-direction: column;
+
 }
 
 .testimonial-name {
@@ -590,6 +594,7 @@ margin: 10px;
 }
 
 .testimonial-role {
+  font-family: "Russo One", sans-serif;
   font-size: 0.85em;
   color: #bbbbbb;
 }

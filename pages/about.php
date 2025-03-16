@@ -1,3 +1,6 @@
+<?php session_start();
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -5,9 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="icon" href="/imges/navlogo.png">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/about.css">
+    <link rel="icon" href="./../imges/navlogo.png">
 </head>
 
 <body>
@@ -16,7 +19,7 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo"><a href="/index.html"><img src="/imges/logo.png" alt=""></a></label>
+        <label class="logo"><a href="./../index.php"><img src="./../imges/logo.png" alt=""></a></label>
 
         <!-- <input type="text" class="search_box" placeholder="Search...">
         <img src="/imges/search.png" alt="" class="search_icon"> -->
@@ -28,14 +31,21 @@
           
 
         <ul>
-            <li><a class="active" href="/index.html">Home</a></li>
-            <li><a href="/pages/codezone.html">CodeZone</a></li>
-            <li><a href="/pages/tutorials.html">Tutorials</a></li>
-            <li><a href="/pages/about.html"><b>About</b></a></li>
+            <li><a class="active" href="./../index.php">Home</a></li>
+            <li><a href="./../pages/codezone.html">CodeZone</a></li>
+            <li><a href="./../pages/tutorials.html">Tutorials</a></li>
+            <li><a href="./../pages/about.html"><b>About</b></a></li>
         </ul>
-        <button class="signup_btn"><a href="" ></a>Sign Up</a></button>
+        <div class="auth-area">
+            <?php if ($username): ?>
+
+                <a href="./../pages/logout.php" class="signup_btn">Sign Out</a>
+            <?php else: ?>
+                <button class="signup_btn" onclick="window.location.href='./../pages/signin.php'">Sign In</button>
+            <?php endif; ?>
+        </div>
     </nav>
-    <div class="content">
+    <div class="content block">
         <h1 class="heading">About Us</h1>
         <div class="containerpara">
             <h2 class="subheading">About CodeVerse</h2> <hr>
@@ -87,9 +97,9 @@
 
     <div class="containerpara">
 
-        <h2 class="contactus">Contact Us</h2> <hr>
+        <h2 class="contactus block">Contact Us</h2> <hr>
 
-     <div class="card-container">
+     <div class="card-container block">
 
         <div class="contact-card">
             <img class="contactimg" src="./../imges/user.png" alt="contact">

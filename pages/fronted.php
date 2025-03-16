@@ -1,13 +1,16 @@
+
+<?php session_start();
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Code Editor</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/imges/navlogo.png">
-    <link rel="stylesheet" href="/css/fronted.css">
-   
+    <link rel="stylesheet" href="./../css/style.css">
+    
+    <link rel="icon" href="./../imges/navlogo.png">
+    <link rel="stylesheet" href="./../css/fronted.css">
 </head>
 <body>
     <nav>
@@ -15,7 +18,7 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo"><a href="/index.html"><img src="/imges/logo.png" alt=""></a></label>
+        <label class="logo"><a href="./../index.php"><img src="./../imges/logo.png" alt=""></a></label>
 
         <!-- <input type="text" class="search_box" placeholder="Search...">
         <img src="/imges/search.png" alt="" class="search_icon"> -->
@@ -27,20 +30,28 @@
           
 
         <ul>
-            <li><a class="active" href="/index.html">Home</a></li>
-            <li><a href="/pages/codezone.html">CodeZone</a></li>
-            <li><a href="/pages/tutorials.html">Tutorials</a></li>
-            <li><a href="/pages/about.html">About</a></li>
+            <li><a class="active" href="./../index.php">Home</a></li>
+            <li><a href="./../pages/codezone.php">CodeZone</a></li>
+            <li><a href="./../pages/tutorials.php">Tutorials</a></li>
+            <li><a href="./../pages/about.php">About</a></li>
         </ul>
-        <button class="signup_btn"><a href="" ></a>Sign Up</a></button>
+        <div class="auth-area">
+            <?php if ($username): ?>
+
+                <a href="./../pages/logout.php" class="signup_btn">Sign Out</a>
+            <?php else: ?>
+                <button class="signup_btn" onclick="window.location.href='./../pages/signin.php'">Sign In</button>
+            <?php endif; ?>
+        </div>
     </nav>
+    
     <center>
-    <h2>CODE VERSE <img src="/imges/startup (1).png " style="height: 30px;"></h2>
+    <h2>CODE VERSE <img src="./../imges/startup (1).png " style="height: 30px;"></h2>
     <div class="editor-container">
       <div class="editor-labels">
-          <span >  <img src="/imges/html-5.png" style="height: 20px;"> HTML </span>
-          <span class="css">  <img src="/imges/css-3.png" style="height: 20px;">CSS</span>
-          <span class="js">  <img src="/imges/js.png" style="height: 20px; border-radius:5px;">&nbsp;JS</span>
+          <span >  <img src="./../imges/html-5.png" style="height: 20px;"> HTML </span>
+          <span class="css">  <img src="./../imges/css-3.png" style="height: 20px;">CSS</span>
+          <span class="js">  <img src="./../imges/js.png" style="height: 20px; border-radius:5px;">&nbsp;JS</span>
           
     </div>
     <div class="editor">
