@@ -146,19 +146,23 @@ ul li a:hover {
 
 .marquee-container {
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   padding: 20px 0;
+  max-width: 1200px; 
+  margin: 0 auto;
 }
 
 .marquee-content {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   width: max-content;
-  animation: marquee-scroll 48s linear infinite;
+  animation: marquee-scroll 100s linear infinite;
 }
 
 .marquee-content img {
   height: 60px;
+  opacity: 0.8;
+  
 }
 
 /* Infinite Scrolling Effect */
@@ -177,27 +181,32 @@ ul li a:hover {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 120px;
+  width: clamp(91px, 26%, 249px);
   z-index: 2;
   pointer-events: none;
+  filter: blur(8px); 
 }
+
 
 .left-shadow {
-  left: 0;
-  background: linear-gradient(to right, #16161a 0%, rgba(22, 22, 26, 0) 100%);
-
+  left: 135px;
+  background: linear-gradient(to right, rgba(22, 22, 26, 1) 0%, rgba(22, 22, 26, 0) 100%);
+  box-shadow: -10px 0 20px rgba(22, 22, 26, 0.5); 
+  filter: blur(13px); 
 }
 
-.right-shadow {
-  right: 0;
-  background: linear-gradient(to left, #16161a 0%, rgba(22, 22, 26, 0) 100%);
 
+.right-shadow {
+  right: 135px;
+  background: linear-gradient(to left, rgba(22, 22, 26, 1) 0%, rgba(22, 22, 26, 0) 100%);
+  box-shadow: 10px 0 20px rgba(22, 22, 26, 0.5); 
+  filter: blur(13px);
 }
 
 .main-heading {
   color: #f3f3f3;
   text-align: center;
-  margin: auto;
+  margin: 35px auto;
   -webkit-text-stroke-width: .8px;
   max-width: 660px;
   font-size: 60px;
