@@ -71,15 +71,14 @@ ul li a:hover {
 }
 
 .home_poster {
-  width: 100%;
   /* height: auto; */
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  
 }
-
-
-
 
 
 .search-container {
@@ -113,6 +112,7 @@ ul li a:hover {
 .signup_btn {
   background-color: #000000;
   color: #fffffe;
+  font-weight: bolder;
   border: 2px solid white;
   padding: 8px 24px;
   text-decoration: none;
@@ -126,7 +126,7 @@ ul li a:hover {
 
 
 .signup_btn:hover {
-  background-color: #000000;
+  background-color: #090909;
   color: white;
   box-shadow: 0px 0px 2px 1px blue;
   transition: 0.3s;
@@ -612,62 +612,6 @@ margin: 10px;
 }
 
 
-/* Footer Styling  */
-.footer {
-  background-color: #000000;
-
-  color: white;
-
-  padding: 20px 0;
-
-  text-align: center;
-
-
-}
-
-.footer .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer p {
-  margin: 10px 0;
-  font-size: 14px;
-
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-
-}
-
-.footer .mx-2 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .footer {
-    padding: 15px 0;
-
-  }
-
-  .footer p {
-    font-size: 12px;
-
-  }
-}
-
-
-
-
 
 
 
@@ -791,3 +735,8 @@ margin: 10px;
   animation-range: entry 0% cover 40%;
   
 }
+
+
+
+
+

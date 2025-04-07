@@ -11,6 +11,91 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
     <link rel="stylesheet" href="./../css/style.css">
     <link rel="stylesheet" href="./../css/about.css">
     <link rel="icon" href="./../imges/navlogo.png">
+      <!--footer-->
+   <style>
+    .footer {
+  background:rgb(0, 0, 0);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: white;
+  flex-wrap: wrap;
+}
+.newsletter {
+  max-width: 400px;
+  color: white;
+}
+.newsletter form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.newsletter input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+.subscribe-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(255, 61, 0);
+    color: black;
+    font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.subscribe-btn:hover {
+  background-color: #e65c00;
+}
+.social-icons {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+.social-icons a {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  color: white;
+  text-decoration: none;
+
+}
+.links, .contact, .support {
+  max-width: 300px;
+  color: white;
+  text-decoration: none;
+}
+.contact a, .support a {
+  color: white;
+  text-decoration: none;
+  color: white;
+}
+.support p {
+  margin: 5px 0;
+  color: white;
+  color: white;
+}
+.copyright {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background:rgb(0, 0, 0);
+  font-size: 14px;
+  
+}
+.home-link{
+  text-decoration: none;
+  color: white;
+}
+</style>
 </head>
 
 <body>
@@ -32,9 +117,9 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
 
         <ul>
             <li><a class="active" href="./../index.php">Home</a></li>
-            <li><a href="./../pages/codezone.html">CodeZone</a></li>
-            <li><a href="./../pages/tutorials.html">Tutorials</a></li>
-            <li><a href="./../pages/about.html"><b>About</b></a></li>
+            <li><a href="./codezone.php">CodeZone</a></li>
+            <li><a href="./tutorials.php">Tutorials</a></li>
+            <li><a href="./about.php"><b>About</b></a></li>
         </ul>
         <div class="auth-area">
             <?php if ($username): ?>
@@ -100,7 +185,15 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
         <h2 class="contactus block">Contact Us</h2> <hr>
 
      <div class="card-container block">
-
+     <div class="contact-card">
+            <img class="contactimg" src="./../imges/user.png" alt="contact">
+            <p class="contact-card-data">Akshay Meshram<br>Student</p>
+            <div class='user-social'>
+                <a href="https://www.linkedin.com/in/akshay-meshram-016808271/"> <img src="./../imges/linkedin.png" alt="LinkedIn"></a>
+                 <a href="https://www.instagram.com/"> <img src="./../imges/instagram.png" alt="Instagram"></a>
+         <a href="https://www.facebook.com/"><img src="./../imges/facebook.png" alt="Facebook"></a>
+               </div>
+        </div>
         <div class="contact-card">
             <img class="contactimg" src="./../imges/user.png" alt="contact">
             <p class="contact-card-data">Parthiv Rathod<br>Student</p>
@@ -138,22 +231,9 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
          <a href="https://www.facebook.com/"><img src="./../imges/facebook.png" alt="Facebook"></a>
                </div>
         </div>
-        <div class="contact-card">
-            <img class="contactimg" src="./../imges/user.png" alt="contact">
-            <p class="contact-card-data">Akshay Meshram<br>Student</p>
-            <div class='user-social'>
-                <a href="https://www.linkedin.com/in/akshay-meshram-016808271/"> <img src="./../imges/linkedin.png" alt="LinkedIn"></a>
-                 <a href="https://www.instagram.com/"> <img src="./../imges/instagram.png" alt="Instagram"></a>
-         <a href="https://www.facebook.com/"><img src="./../imges/facebook.png" alt="Facebook"></a>
-               </div>
-        </div>
+        
 
     </div>
-
-
-
-
-
 
 
     <div class="containerpara">
@@ -164,16 +244,45 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
 </div>
 
 
-    
-    <!-- <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Your Company. All rights reserved.</p>
-            <p>
-                <a href="contract .html" class="text-white mx-2">Privacy Policy</a> |
-                <a href="contract .html" class="text-white mx-2">Terms & Conditions</a> |
-                <a href="contract .html" class="text-white mx-2">Contact Us</a>
-            </p>
+<div class="line-container block">
+        <div class="line "></div>
+    </div>
+    <footer class="footer">
+        <div class="newsletter">
+            <h3>Subscribe to our newsletter to stay in touch with the latest.</h3>
+            <form>
+                <input type="email" placeholder="Your email address">
+                <button class="subscribe-btn">Subscribe</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><img src="./../imges/facebook.png" alt="facebook" style="height: 30px;"></a>
+                <a href="#"><img src="./../imges/instagram.png" alt="instagram" style="height: 35px;"></a>
+                <a href="#"><img src="./../imges/linkedin.png" alt="linkedin" style="height: 30px;"></a>
+                <a href="#"><img src="./../imges/twitter.png" alt="twitter" style="height: 30px;"></a>
+                <a href="#"><img src="./../imges/github.png" alt="github" style="height: 30px;"></a>
+            </div>
         </div>
-    </footer> -->
+        <div class="links">
+            <h4>Pages</h4>
+             <a href="./../index.php" class="home-link"><p>Home</p></a>
+            <a href="./tutorials.php" class="home-link"><p>Toturials</p></a>
+            <a href="./codezone.php" class="home-link"> <p>CodeZone</p></a>
+            <a href="./about.php" class="home-link"> <p>About Us</p></a>
+           
+        </div>
+        <div class="contact">
+            <h4>Drop Us a Line</h4>
+            <p><a href="mailto:inquiry@halo-lab.com">inquiry@halo-lab.com</a></p>
+            <h4>Call Us</h4>
+            <p><a href="tel:+12133378573">+1 (213) 337-8573</a></p>
+        </div>
+        <div class="support">
+            <h4>Support</h4>
+            <p>Help Center</p>
+            <p>Community Forum</p>
+            <p>Report a Problem</p>
+        </div>
+    </footer>
+    <div class="copyright">© 2025 Your Company. All rights reserved.</div>
 </body>
 </html>

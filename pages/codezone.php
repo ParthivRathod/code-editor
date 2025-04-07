@@ -16,6 +16,84 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <!--footer-->
+     <style>
+    body{
+        background-color: black;
+    }
+    .footer {
+  background:rgb(0, 0, 0);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  
+  flex-wrap: wrap;
+}
+.newsletter {
+  max-width: 400px;
+}
+.newsletter form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.newsletter input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+.subscribe-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(255, 61, 0);
+    color: black;
+    font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.subscribe-btn:hover {
+  background-color: #e65c00;
+}
+.social-icons {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+.social-icons a {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+.links, .contact, .support {
+  max-width: 300px;
+}
+.contact a, .support a {
+  color: white;
+  text-decoration: none;
+}
+.support p {
+  margin: 5px 0;
+}
+.copyright {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background:rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+</style>
 </head>
 
 <body>
@@ -62,7 +140,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
     </div>
     <div class="card_container">
         <!-- card11  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/html (1).png" alt="">
             <div class="card_content">
                 <h3>Forntend</h3>
@@ -74,7 +152,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
             </div>
         </div>
         <!-- card1  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/html.png" alt="gym_image">
             <div class="card_content">
                 <h3>HTML</h3>
@@ -85,12 +163,12 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                     and structure of web content.</p>
 
 
-                <a href="https://youtu.be/d7ec5Xv_o2w?si=4yuOgfdlUzijFMcC" class="btn">Run code</a>
+                <a href="./../pages/html.php" class="btn">Run code</a>
             </div>
         </div>
 
         <!-- card2  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/css-3 (1).png" alt="gym_image">
             <div class="card_content">
                 <h3>CSS</h3>
@@ -99,12 +177,12 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                 </p>
 
 
-                <a href="#" class="btn">Run code</a>
+                <a href="./../pages/css.php" class="btn">Run code</a>
             </div>
         </div>
 
         <!-- card3  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/java-script.png" alt="gym_image">
             <div class="card_content">
                 <h3>java-script</h3>
@@ -112,11 +190,11 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                 <p>JavaScript is a versatile, dynamically typed programming language used for interactive web
                     applications, </p>
 
-                <a href="#" class="btn">Run code</a>
+                <a href="./../pages/js.php" class="btn">Run code</a>
             </div>
         </div>
         <!-- card4  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/c-.png" alt="gym_image">
             <div class="card_content">
                 <h3>C++</h3>
@@ -130,7 +208,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
         </div>
 
         <!-- card5  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/c-sharp.png" alt="gym_image">
             <div class="card_content">
                 <h3>C#</h3>
@@ -144,7 +222,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
         </div>
 
         <!-- card6  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/letter-c.png" alt="gym_image">
             <div class="card_content">
                 <h3>C</h3>
@@ -159,7 +237,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
         </div>
 
         <!-- card7  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/java.png" alt="gym_image">
             <div class="card_content">
                 <h3>Java</h3>
@@ -174,7 +252,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
         </div>
 
         <!-- card8  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/python.png" alt="gym_image">
             <div class="card_content">
                 <h3>Python</h3>
@@ -187,7 +265,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
             </div>
         </div>
         <!-- card9  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/php.png" alt="gym_image">
             <div class="card_content">
                 <h3>PHP</h3>
@@ -200,7 +278,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
             </div>
         </div>
         <!-- card10  -->
-        <div class="card">
+        <div class="card block">
             <img src="./../imges/sql.png">
             <div class="card_content">
                 <h3>SQL</h3>
@@ -213,20 +291,49 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
         </div>
 
     </div>
+       
 
 
 
-
+    <div class="line-container block">
+        <div class="line "></div>
+    </div>
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Your Company. All rights reserved.</p>
-            <p>
-                <a href="contract .html" class="text-white mx-2">Privacy Policy</a> |
-                <a href="contract .html" class="text-white mx-2">Terms & Conditions</a> |
-                <a href="contract .html" class="text-white mx-2">Contact Us</a>
-            </p>
-
+        <div class="newsletter">
+            <h3>Subscribe to our newsletter to stay in touch with the latest.</h3>
+            <form>
+                <input type="email" placeholder="Your email address">
+                <button class="subscribe-btn">Subscribe</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><img src="./../imges/facebook.png" alt="facebook" style="height: 30px;"></a>
+                <a href="#"><img src="./../imges/instagram.png" alt="instagram" style="height: 35px;"></a>
+                <a href="#"><img src="./../imges/linkedin.png" alt="linkedin" style="height: 30px;"></a>
+                <a href="#"><img src="./../imges/twitter.png" alt="twitter" style="height: 30px;"></a>
+                <a href="#"><img src="./../imges/github.png" alt="github" style="height: 30px;"></a>
+            </div>
+        </div>
+        <div class="links">
+            <h4>Pages</h4>
+             <a href="./../index.php"><p>Home</p></a>
+            <a href="./tutorials.php"><p>Toturials</p></a>
+            <a href="./codezone.php"> <p>CodeZone</p></a>
+            <a href="./about.php"> <p>About Us</p></a>
+           
+        </div>
+        <div class="contact">
+            <h4>Drop Us a Line</h4>
+            <p><a href="mailto:inquiry@halo-lab.com">inquiry@halo-lab.com</a></p>
+            <h4>Call Us</h4>
+            <p><a href="tel:+12133378573">+1 (213) 337-8573</a></p>
+        </div>
+        <div class="support">
+            <h4>Support</h4>
+            <p>Help Center</p>
+            <p>Community Forum</p>
+            <p>Report a Problem</p>
         </div>
     </footer>
+    <div class="copyright">© 2025 Your Company. All rights reserved.</div>
     </body>
     </html>

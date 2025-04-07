@@ -56,10 +56,10 @@ section span {
     transition: 1.5s;
 }
 
-section span:hover {
-    background: rgb(102, 173, 231);
+/* section span:hover {
+    background: #655985;
     transition: 0s;
-}
+} */
 
 section .signin {
     position: absolute;
@@ -86,7 +86,7 @@ section .signin .content {
 
 section .signin .content h2 {
     font-size: 2em;
-    color: rgb(146, 145, 120);
+    color: white;
     text-transform: uppercase;
 }
 
@@ -140,7 +140,7 @@ section .signin .content .form .inputBox i {
 }
 
 .signin .content .form .links a {
-    color: #0f0;
+    color: rgb(102 95 207);
     text-decoration: none;
     font-weight: 600;
 }
@@ -152,8 +152,9 @@ section .signin .content .form .inputBox i {
 
 .signin .content .form .inputBox input[type="submit"] {
     padding: 10px;
-    background: #0f0;
-    color: #000;
+    background:rgb(102 95 207);
+    color: white;
+    
     font-weight: 600;
     font-size: 1.35em;
     letter-spacing: 0.05em;
