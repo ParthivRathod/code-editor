@@ -118,6 +118,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
             <li><a href="./../pages/codezone.php"><b>CodeZone</b></a></li>
             <li><a href="./../pages/tutorials.php">Tutorials</a></li>
             <li><a href="./../pages/about.php">About</a></li>
+            <li><a href="./contact.php">Contact</a></li>
         </ul>
         <!-- <button class="signup_btn signin_style"><a href="" ></a>Sign Up</a></button> -->
         <div class="auth-area">

@@ -34,6 +34,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
             <li><a href="./../pages/codezone.php">CodeZone</a></li>
             <li><a href="./../pages/tutorials.php">Tutorials</a></li>
             <li><a href="./../pages/about.php">About</a></li>
+            <li><a href="./contact.php">Contact</a></li>
         </ul>
         <div class="auth-area">
             <?php if ($username): ?>

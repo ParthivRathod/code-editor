@@ -713,6 +713,7 @@ Unmounting =Component is removed from the DOM.<br>
             <li><a href="./../pages/codezone.php">CodeZone</a></li>
             <li><a href="./../pages/tutorials.php"><b>Tutorials</b></a></li>
             <li><a href="./../pages/about.php">About</a></li>
+            <li><a href="./contact.php">Contact</a></li>
         </ul>
         <div class="auth-area">
             <?php if ($username): ?>
