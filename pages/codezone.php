@@ -204,7 +204,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                     at Bell Labs.</p>
 
 
-                <a href="#" class="btn">Run code</a>
+                <a href="#" class="btn">Upcoming...</a>
             </div>
         </div>
 
@@ -218,7 +218,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                     1972 at Bell Labs.</p>
 
 
-                <a href="#" class="btn">Run code</a>
+                <a href="#" class="btn">Upcoming...</a>
             </div>
         </div>
 
@@ -233,7 +233,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                 </p>
 
 
-                <a href="#" class="btn">Run code</a>
+                <a href="#" class="btn">Upcoming...</a>
             </div>
         </div>
 
@@ -248,7 +248,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
 
 
 
-                <a href="#" class="btn">Run code</a>
+                <a href="#" class="btn">Upcoming...</a>
             </div>
         </div>
 
@@ -262,7 +262,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                     simplicity, readability, and versatility.</p>
 
 
-                <a href="#" class="btn">Run code</a>
+                <a href="#" class="btn">Upcoming...</a>
             </div>
         </div>
         <!-- card9  -->
@@ -275,7 +275,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                     primarily for web development but also used as a general-purpose programming language.</p>
 
 
-                <a href="#" class="btn">Run code</a>
+                <a href="#" class="btn">Upcoming...</a>
             </div>
         </div>
         <!-- card10  -->
@@ -287,7 +287,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : null; ?>
                 <p>QL (Structured Query Language) is a domain-specific programming language used for managing and
                     manipulating relational databases. It is the standard language for </p>
 
-                <a href="#" class="btn">Run code</a>
+                <a href="#" class="btn">Upcoming...</a>
             </div>
         </div>
 
